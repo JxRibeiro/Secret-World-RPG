@@ -53,7 +53,7 @@ Fight system
 Scenes creation  
 Scenarios creation  
 Main story  
-Side guests  
+Side quests  
 
 ## Author
 João Ribeiro 
