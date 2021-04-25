@@ -1,8 +1,8 @@
 # Secret World RPG Simulator
 
-## Code quality by Codacy
+## Code
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d29f083b05a4ed7ac08c6cfb6a16e23)](https://www.codacy.com/gh/JxRibeiro/Secret-World-RPG/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JxRibeiro/Secret-World-RPG&amp;utm_campaign=Badge_Grade)
-
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 ## Entertainment Idea
 To have a fun story telling text based RPG game
 
