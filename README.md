@@ -9,7 +9,7 @@ To have a fun story telling text based RPG game
 ## Development Idea
 Improvement on:  
 Loops  
-Decision tree
+Decision tree  
 Functions  
 Variables  
 
