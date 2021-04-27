@@ -28,11 +28,8 @@ Who knows what dangers await to those who fall.
 
 ## Libraries 📚
 
-Random
+[Time](https://docs.python.org/3/library/time.html)
 
-```python
-pip install random
-```
 
 ## Preparation ⚙️
 
