@@ -1,6 +1,6 @@
 # Secret World RPG Simulator
 
-## Repository 🧾
+## Repository :octocat:
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d29f083b05a4ed7ac08c6cfb6a16e23)](https://www.codacy.com/gh/JxRibeiro/Secret-World-RPG/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JxRibeiro/Secret-World-RPG&amp;utm_campaign=Badge_Grade)  
 ![GitHub repo size](https://img.shields.io/github/repo-size/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub language count](https://img.shields.io/github/languages/count/JxRibeiro/Secret-World-RPG?style=flat)  
@@ -42,7 +42,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Forking 💾
+## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
 Work in progress  
