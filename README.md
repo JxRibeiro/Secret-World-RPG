@@ -29,6 +29,9 @@ Who knows what dangers await to those who fall.
 ## Libraries 📚
 
 [Time](https://docs.python.org/3/library/time.html)
+[Sys](https://docs.python.org/3/library/sys.html)
+[OS](https://docs.python.org/3/library/os.html)
+[Utils](https://pypi.org/project/python-utils/)
 
 
 ## Preparation ⚙️
