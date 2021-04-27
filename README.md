@@ -50,7 +50,7 @@ Feel free to fork this project
 Work in progress  
 ## To Do
 | To Do              | Doing              | Done            |
-| ------------------ |:------------------:| ---------------:|
+|--------------------|:------------------:|----------------:|
 | Enemies creation   | Class creation     | Main script     |
 | Fight system       |                    |                 |
 | Main storyline     |                    |                 |
