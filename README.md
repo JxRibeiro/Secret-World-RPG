@@ -51,10 +51,10 @@ Work in progress
 |--------------------|:------------------:|----------------:|
 | Enemies creation   | Class creation     | Main script     |
 | Fight system       |                    |                 |
+| Implement MongoDB  |                    |                 |
 | Main storyline     |                    |                 |
 
 ## Roadmap 📋
-Implement MongoDB
 Scenes creation  
 Scenarios creation  
 Side quests  
