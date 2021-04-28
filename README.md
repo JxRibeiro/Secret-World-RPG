@@ -60,6 +60,7 @@ Work in progress
 Scenes creation  
 Scenarios creation  
 Side quests  
+Docker  
 
 ## Author 👨‍💻
 João Ribeiro 
