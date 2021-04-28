@@ -50,8 +50,8 @@ Work in progress
 ## To Do ✅
 | To Do              | Doing              | Done            |
 |--------------------|:------------------:|----------------:|
-| Enemies creation   | Class creation     | Main script     |
-|                    |                    |                 |
+| Enemies creation   |                    | Main script     |
+|                    | Class creation     |                 |
 | Fight system       |                    |                 |
 |                    | Implement MongoDB  |                 |
 | Main storyline     |                    |                 |
