@@ -45,11 +45,13 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
+All stats it's being implemented using MongoDB  
 Work in progress  
 ## To Do ✅
 | To Do              | Doing              | Done            |
 |--------------------|:------------------:|----------------:|
 | Enemies creation   | Class creation     | Main script     |
+|                    |                    |                 |
 | Fight system       |                    |                 |
 |                    | Implement MongoDB  |                 |
 | Main storyline     |                    |                 |
