@@ -32,6 +32,7 @@ Who knows what dangers await to those who fall.
 [Sys](https://docs.python.org/3/library/sys.html)  
 [OS](https://docs.python.org/3/library/os.html)  
 [Utils](https://pypi.org/project/python-utils/)  
+[Openpyxl](https://openpyxl.readthedocs.io/en/stable/)
 
 
 ## Preparation ⚙️
@@ -45,7 +46,7 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
-All stats it's being implemented using MongoDB  
+Stats system using Openpyxl  
 Work in progress  
 ## To Do ✅
 | To Do              | Doing              | Done            |
