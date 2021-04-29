@@ -16,7 +16,7 @@ Loops
 Decision tree  
 Functions  
 Variables  
-MongoDB
+Openpyxl
 
 ## Short description 📝
 You move forward through the unfamiliar portal formed by two bended trees.  
@@ -53,7 +53,7 @@ Work in progress
 | Enemies creation   |                    | Main script     |
 |                    | Class creation     |                 |
 |                    | Fight system       |                 |
-|                    | Implement MongoDB  |                 |
+|                    | Implement openpyxl |                 |
 | Main storyline     |                    |                 |
 
 ## Roadmap 📋
