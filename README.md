@@ -51,7 +51,7 @@ Work in progress
 ## To Do ✅
 | To Do              | Doing              | Done            |
 |--------------------|:------------------:|----------------:|
-| Enemies creation   | Enemies creation   | Main script     |
+|                    | Enemies creation   | Main script     |
 |                    |                    | Class creation  |
 |                    | Fight system       |                 |
 |                    | Implement openpyxl |                 |
