@@ -16,7 +16,7 @@ Loops
 Decision tree  
 Functions  
 Variables  
-Openpyxl
+OpenPyXL
 
 ## Short description 📝
 You move forward through the unfamiliar portal formed by two bended trees.  
@@ -31,8 +31,8 @@ Who knows what dangers await to those who fall.
 [Time](https://docs.python.org/3/library/time.html)  
 [Sys](https://docs.python.org/3/library/sys.html)  
 [OS](https://docs.python.org/3/library/os.html)  
-[Utils](https://pypi.org/project/python-utils/)  
-[Openpyxl](https://openpyxl.readthedocs.io/en/stable/)
+[Utils](https://pypi.org/project/python-utils/)  ]
+[OpenPyxl](https://openpyxl.readthedocs.io/en/stable/)
 
 
 ## Preparation ⚙️
@@ -46,15 +46,15 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
-Stats system using Openpyxl  
+All stats it's being implemented using MongoDB  
 Work in progress  
 ## To Do ✅
 | To Do              | Doing              | Done            |
 |--------------------|:------------------:|----------------:|
-|                    | Enemies creation   | Main script     |
-|                    |                    | Class creation  |
+| Enemies creation   |                    | Main script     |
+|                    | Class creation     |                 |
 |                    | Fight system       |                 |
-|                    | Implement openpyxl |                 |
+|                    | Implement xlsx     |                 |
 | Main storyline     |                    |                 |
 
 ## Roadmap 📋

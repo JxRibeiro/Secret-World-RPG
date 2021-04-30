@@ -28,14 +28,14 @@ def fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed):
 		monsterSpeed = random.randint(1,5)
 		if monsterAttack == charAttack:
 			print('You and monster landed with same attack power.\nNothing happened.')
-			time.sleep(1)
+			time.sleep(0.5)
 			
 		if charSpeed > monsterSpeed and charAttack > monsterAttack:
 			charHits = charHits + 1
 			charPower = charPower + charAttack
 			monsterHP = monsterHP - charAttack
-			print(f'You hit the monster with {charAttack}.\nMonster have {monsterHP} HP',end='\r')
-			time.sleep(1)
+			print(f'You hit the monster with {charAttack}.\nMonster have {monsterHP} HP',)
+			time.sleep(0.5)
 			if monsterHP <= 0:
 				avgCharPower = charPower / charHits
 				avgCP = "{:.2f}".format(avgCharPower)
@@ -50,7 +50,7 @@ def fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed):
 			monsterPower = monsterPower + monsterAttack
 			charHP = charHP - monsterAttack
 			print(f'You try to hit monster with {charAttack}, but monster strikes you back with {monsterAttack}\nYou have {charHP} HP')
-			time.sleep(1)
+			time.sleep(0.5)
 			if charHP <= 0:
 				avgMonsterPower = monsterPower / monsterHits
 				avgMP = "{:.2f}".format(avgMonsterPower)
@@ -62,8 +62,8 @@ def fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed):
 					break
 		if charSpeed > monsterSpeed and charAttack < monsterAttack:
 			print('Monster miss the attack!')
-			time.sleep(1)
+			time.sleep(0.5)
 		elif charSpeed < monsterSpeed and charAttack > monsterAttack:
 			print('You miss the attack!')
-			time.sleep(1)
+			time.sleep(0.5)
 fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed)
