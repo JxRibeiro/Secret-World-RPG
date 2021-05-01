@@ -56,7 +56,7 @@ Work in progress
 ## To Do ✅
 | To Do            |     Doing      |           Done |
 | ---------------- | :------------: | -------------: |
-|                  | Create enemies |                |
+|                  |                | Create Enemies |
 |                  |                |  Main script   |
 |                  |                | Class creation |
 |                  |  Fight system  |                |
