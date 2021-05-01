@@ -13,10 +13,18 @@ for line in WelcomeMessage:
             print(c, end='')
             sys.stdout.flush()
             sleep(0)
-userInput = int(input('[1] Quick\n[2] Normal\nSelect:\n> '))
-if userInput == 1:
-    _cls()
-    import quick
-else:
-    _cls()
-    import SelectClass
+def GameType():
+
+    userInput = int(input('[1] Quick\n[2] Normal\nSelect:\n> '))
+    if userInput > 2:
+        print('Invalid option, try again')
+        sleep(1)
+        _cls()
+        return GameType()
+    elif userInput == 1:
+        _cls()
+        import quick
+    else:
+        _cls()
+        import SelectClass
+GameType()

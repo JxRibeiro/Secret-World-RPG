@@ -27,11 +27,15 @@ Welcome to The Secret World
             print(c, end='')
             sys.stdout.flush()
             sleep(0)
+
 def selectAction():
-    choices = [1, 2, 3]
     print('[1] New Game\n[2] Load Game\n[3] Exit')
     choice = int(input('Select an action:\n> '))
-    print('[1] New Game\n[2] Load Game\n[3] Exit')
+    if choice > 3:
+        print('Invalid option, try again')
+        sleep(1)
+        _cls()
+        return selectAction()
     if choice == 1:
         _cls()
         import NewGame
@@ -41,5 +45,7 @@ def selectAction():
         _cls()
         return selectAction()
     else:
-        quit()            
+        quit()     
+gameStart()   
+    
 selectAction()

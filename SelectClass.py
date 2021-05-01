@@ -1,4 +1,9 @@
 from openpyxl import load_workbook
+from time import sleep
+import os
+def _cls():
+    os.system('cls' if os.name=='nt' else 'clear')
+
 book = load_workbook(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
 sheet = book.get_sheet_by_name("UserClass")
 cFighter = sheet['A2'].value
@@ -54,45 +59,71 @@ MP: {MPNecro}
 Attack: {AttNecro}
 Defense: {DefMage}
 """
-
-print('Available classes:\n[1] Fighter\n[2] Mage\n[3] Necromancer')
-userClass = int(input('Please, choose your class:\n> '))
-if userClass == 1:
-    print(FighterDescription)
-    confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
-    if confirmed == 1:
-        sheet = book.get_sheet_by_name("UserStats")
-        sheet['A2'].value = cFighter
-        sheet['B2'].value = HPFighter
-        sheet['C2'].value = MPFighter
-        sheet['D2'].value = AttFighter
-        sheet['E2'].value = DefFighter
-        sheet['F2'].value = 'Sword'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
-        import Normal
-elif userClass == 2:
-    print(MageDescription)
-    confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
-    if confirmed == 1:
-        sheet = book.get_sheet_by_name("UserStats")
-        sheet['A2'].value = cMage
-        sheet['B2'].value = HPMage
-        sheet['C2'].value = MPMage
-        sheet['D2'].value = AttMage
-        sheet['E2'].value = DefMage
-        sheet['F2'].value = 'Stave'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
-        import Normal
-else:
-    print(NecromancerDescription)
-    confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
-    if confirmed == 1:
-        sheet = book.get_sheet_by_name("UserStats")
-        sheet['A2'].value = cNecro
-        sheet['B2'].value = HPNecro
-        sheet['C2'].value = MPNecro
-        sheet['D2'].value = AttNecro
-        sheet['E2'].value = DefNecro
-        sheet['F2'].value = 'Scythe'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
-        import Normal
+def SelectClass():
+    print('Available classes:\n[1] Fighter\n[2] Mage\n[3] Necromancer')
+    userClass = int(input('Please, choose your class:\n> '))
+    if userClass > 3:
+        print('Invalid option, try again')
+        sleep(1)
+        _cls()
+        return SelectClass()
+    if userClass == 1:
+        print(FighterDescription)
+        confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
+        if confirmed == 2:
+            _cls()
+            return SelectClass()
+        if confirmed == 1:
+            sheet = book.get_sheet_by_name("UserStats")
+            sheet['A2'].value = cFighter
+            sheet['B2'].value = HPFighter
+            sheet['C2'].value = MPFighter
+            sheet['D2'].value = AttFighter
+            sheet['E2'].value = DefFighter
+            sheet['F2'].value = 'Sword'
+            book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+            import Normal
+        elif confirmed > 2:
+            print('Invalid option, try again')
+            sleep(1)
+            _cls()
+            return SelectClass()
+    elif userClass == 2:
+        print(MageDescription)
+        confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
+        if confirmed == 2:
+            _cls()
+            return SelectClass()
+        if confirmed == 1:
+            sheet = book.get_sheet_by_name("UserStats")
+            sheet['A2'].value = cMage
+            sheet['B2'].value = HPMage
+            sheet['C2'].value = MPMage
+            sheet['D2'].value = AttMage
+            sheet['E2'].value = DefMage
+            sheet['F2'].value = 'Stave'
+            book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+            import Normal
+        if confirmed == 2:
+            _cls()
+            return SelectClass()
+    else:
+        print(NecromancerDescription)
+        confirmed = int(input('Are you satisfied?\n[1] Yes\n[2] No\n> '))
+        if confirmed == 2:
+            _cls()
+            return SelectClass()
+        if confirmed == 1:
+            sheet = book.get_sheet_by_name("UserStats")
+            sheet['A2'].value = cNecro
+            sheet['B2'].value = HPNecro
+            sheet['C2'].value = MPNecro
+            sheet['D2'].value = AttNecro
+            sheet['E2'].value = DefNecro
+            sheet['F2'].value = 'Scythe'
+            book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+            import Normal
+        if confirmed == 2:
+            _cls()
+            return SelectClass()
+SelectClass()
