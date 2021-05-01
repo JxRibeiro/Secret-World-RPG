@@ -6,10 +6,13 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub top language](https://img.shields.io/github/languages/top/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub last commit](https://img.shields.io/github/last-commit/JxRibeiro/Secret-World-RPG?color=red&style=flat)  
+<a href=https://replit.com/@JooRibeiro2/Secret-World-RPG>![Foo](https://img.shields.io/badge/Replit-Run%20on%20Replit-blue?style=flat&logo=repl.it)</a>
 
 ## Entertainment Idea 💡
 To have a fun story telling text based RPG game
 
+## Demonstration :desktop_computer:
+![Demo](https://github.com/JxRibeiro/Secret-World-RPG/blob/Replit/images/Demo.gif)
 ## Development Idea 👨‍💻
 Improvement on:  
 Loops  
@@ -49,18 +52,19 @@ Feel free to fork this project
 All stats it's being implemented using MongoDB  
 Work in progress  
 ## To Do ✅
-| To Do              | Doing              | Done            |
-|--------------------|:------------------:|----------------:|
-| Enemies creation   |                    | Main script     |
-|                    |                    | Class creation  |
-|                    | Fight system       |                 |
-|                    | Implement xlsx     |                 |
-| Main storyline     |                    |                 |
+| To Do            |     Doing      |           Done |
+| ---------------- | :------------: | -------------: |
+| Enemies creation |                |    Main script |
+|                  |                | Class creation |
+|                  |  Fight system  |                |
+|                  | Implement xlsx |                |
+| Main storyline   |                |                |
 
 ## Roadmap 📋
 Scenes creation  
 Scenarios creation  
 Side quests  
+MongoDB  
 Docker  
 
 ## Author 👨‍💻
