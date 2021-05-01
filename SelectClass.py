@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-book = load_workbook(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+book = load_workbook(filename="data.xlsx")
 sheet = book.get_sheet_by_name("UserClass")
 cFighter = sheet['A2'].value
 cMage = sheet['A3'].value
@@ -68,7 +68,7 @@ if userClass == 1:
         sheet['D2'].value = AttFighter
         sheet['E2'].value = DefFighter
         sheet['F2'].value = 'Sword'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+        book.save(filename="data.xlsx")
         import Normal
 elif userClass == 2:
     print(MageDescription)
@@ -81,7 +81,7 @@ elif userClass == 2:
         sheet['D2'].value = AttMage
         sheet['E2'].value = DefMage
         sheet['F2'].value = 'Stave'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+        book.save(filename="data.xlsx")
         import Normal
 else:
     print(NecromancerDescription)
@@ -94,5 +94,5 @@ else:
         sheet['D2'].value = AttNecro
         sheet['E2'].value = DefNecro
         sheet['F2'].value = 'Scythe'
-        book.save(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+        book.save(filename="data.xlsx")
         import Normal

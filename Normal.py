@@ -1,7 +1,7 @@
 from time import sleep
 import sys
 from openpyxl import load_workbook
-book = load_workbook(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
+book = load_workbook(filename="data.xlsx")
 sheet = book.get_sheet_by_name("UserStats")
 userClass = sheet['A2'].value
 itemReceived = sheet['F2'].value

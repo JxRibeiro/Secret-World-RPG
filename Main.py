@@ -27,6 +27,8 @@ Welcome to The Secret World
             print(c, end='')
             sys.stdout.flush()
             sleep(0)
+
+
 def selectAction():
     choices = [1, 2, 3]
     print('[1] New Game\n[2] Load Game\n[3] Exit')
@@ -41,5 +43,7 @@ def selectAction():
         _cls()
         return selectAction()
     else:
-        quit()            
+        quit()
+
+
 selectAction()

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "repl_python3_Secret-World-RPG"
+version = "0.1.0"
+description = ""
+authors = ["JooRibeiro2 <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openpyxl = "^3.0.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
