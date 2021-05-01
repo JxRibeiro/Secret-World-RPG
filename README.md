@@ -56,7 +56,8 @@ Work in progress
 ## To Do ✅
 | To Do            |     Doing      |           Done |
 | ---------------- | :------------: | -------------: |
-|                  | Enemies creation |    Main script |
+|                  | Create enemies |                |
+|                  |                |  Main script   |
 |                  |                | Class creation |
 |                  |  Fight system  |                |
 |                  | Implement xlsx |                |
