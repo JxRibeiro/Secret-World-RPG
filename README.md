@@ -1,4 +1,4 @@
-# Secret World RPG Simulator
+# Secret World RPG Simulator - On roadmap 
 
 ## Repository :octocat:
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d29f083b05a4ed7ac08c6cfb6a16e23)](https://www.codacy.com/gh/JxRibeiro/Secret-World-RPG/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JxRibeiro/Secret-World-RPG&amp;utm_campaign=Badge_Grade)  
@@ -49,6 +49,8 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
+**This project will be on roadmap for now**  
+Beta fight system deployed 03-05-2021
 Fight system deployment 01-05-2021  
 First demo 04-31-2021  
 Class creation done  
@@ -60,7 +62,7 @@ Work in progress
 |                  |                | Create Enemies |
 |                  |                |  Main script   |
 |                  |                | Class creation |
-|                  |  Fight system  |                |
+|                  |                | Fight system   |
 |                  | Implement xlsx |                |
 | Main storyline   |                |                |
 
