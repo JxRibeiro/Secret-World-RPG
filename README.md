@@ -49,8 +49,8 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
-**This project will be on roadmap for now**  
-Beta fight system deployed 03-05-2021
+**This project will be on roadmap for now on**  
+Beta fight system deployed 03-05-2021  
 Fight system deployment 01-05-2021  
 First demo 04-31-2021  
 Class creation done  
