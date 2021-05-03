@@ -49,6 +49,7 @@ Please make sure to update tests as appropriate.
 ## Forking 🧲
 Feel free to fork this project 
 ## Changelog 📖
+Fight system deployment 01-05-2021
 First demo 04-31-2021  
 Class creation done  
 All stats it's being implemented using ~MongoDB~ openpyxl   
