@@ -48,7 +48,7 @@ Feel free to fork this project
 Fight system fixed - 05-05-2021  
 Beta fight system deployed 03-05-2021  
 Fight system deployment 01-05-2021  
-First demo 04-31-2021  
+First demo 04-30-2021  
 Class creation done  
 All stats it's being implemented using openpyxl   
 Work in progress  
