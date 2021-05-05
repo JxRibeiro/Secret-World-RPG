@@ -1,5 +1,3 @@
-# Micro RPG text-based game
-# Import section
 import random
 import time
 import sys
@@ -7,17 +5,6 @@ from openpyxl import load_workbook
 import random
 from time import sleep
 from utils import _cls
-
-# Variables
-charStrenght = 0
-charSpeed = 0
-monsterStrenght = 0
-monsterSpeed = 0
-charHP = 0
-monsterHP = 0
-charAttack = 0
-monsterAttack = 0
-
 EnemyChosen = random.randint(1, 3)
 book = load_workbook(filename="/home/joao/00-Dev/Python/Secret-World-RPG/data.xlsx")
 UserStats = book["UserStats"]
@@ -26,6 +13,9 @@ UserHP = UserStats['B2'].value
 UserMP = UserStats['C2'].value
 UserAttack = UserStats['D2'].value
 UserDefense = UserStats['E2'].value
+_UserHP = UserHP
+_UserAttack = random.randint(1, UserAttack)
+_UserDefense = random.randint(1, UserDefense)
 EnemyClass = book["EnemyClass"]
 EnemyStats = book["EnemyStats"]
 
@@ -47,60 +37,89 @@ else:
     EnemyMP = EnemyStats['C4'].value
     EnemyAttack = EnemyStats['D4'].value
     EnemyDefense = EnemyStats['E4'].value   
-
-def fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed):
-	charHP = UserHP
-	monsterHP = EnemyHP
-	charPower = 0
-	charHits = 0
-	avgCharPower = 0
-	monsterHits = 0
-	monsterPower = 0
-	avgMonsterPower = 0
-	while UserHP or EnemyHP <= 0:
-		charAttack = random.randint(1, UserAttack)
-		charSpeed = random.randint(1, UserDefense)
-		monsterAttack = random.randint(1, EnemyAttack)
-		monsterSpeed = random.randint(1,EnemyDefense)
-        
-		if monsterAttack == charAttack:
-			print(f'{UserClass} and {EnemyClass} landed same attack power.\nNothing happened.')
-			time.sleep(0.5)
-			
-		if charSpeed > monsterSpeed and charAttack > monsterAttack:
-			charHits = charHits + 1
-			charPower = charPower + charAttack
-			monsterHP = monsterHP - charAttack
-			print(f'You hit the monster with {charAttack}.\nMonster have {monsterHP} HP',)
-			time.sleep(0.5)
-			if monsterHP <= 0:
-				avgCharPower = charPower / charHits
-				avgCP = "{:.2f}".format(avgCharPower)
-				print(f'Congratulations! You win the battle\nYou landed {charHits} hits.\nAverage power {avgCP}')
-				prompt = str(input('Do you want to play again? (Y/N)')).lower()
-				if prompt == 'y':
-					fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed)
-				else:
-					break
-		elif charSpeed < monsterSpeed and charAttack < monsterAttack:
-			monsterHits = monsterHits + 1
-			monsterPower = monsterPower + monsterAttack
-			charHP = charHP - monsterAttack
-			print(f'You try to hit {EnemyClass} with {charAttack}, but {EnemyClass} strikes you back with {monsterAttack}\nYou have {charHP} HP')
-			time.sleep(0.5)
-			if charHP <= 0:
-				avgMonsterPower = monsterPower / monsterHits
-				avgMP = "{:.2f}".format(avgMonsterPower)
-				print(f'{UserClass} you lost the battle!\n{EnemyClass} landed {monsterHits} hits.\nAverage power {avgMP}')
-				prompt = str(input('Do you want to play again? (Y/N) ')).lower()
-				if prompt == 'y':
-					fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed)
-				else:
-					break
-		if charSpeed > monsterSpeed and charAttack < monsterAttack:
-			print(f'{EnemyClass} miss the attack!')
-			time.sleep(0.5)
-		elif charSpeed < monsterSpeed and charAttack > monsterAttack:
-			print(f'{UserClass} miss the attack!')
-			time.sleep(0.5)
-fight(charStrenght, charSpeed,monsterStrenght,monsterSpeed)
+_EnemyHP = EnemyHP
+_EnemyAttack = random.randint(1, EnemyAttack)
+_EnemyDefense = random.randint(1, EnemyDefense)
+turn = 1
+loopx = 0
+print(f'A wild {EnemyClass} appears!\nHP: {EnemyHP}\nAttack: {EnemyAttack}\nDefense: {EnemyDefense}\nSelect an action:\n')
+while _UserHP >= 0 or _EnemyHP >= 0:
+    _UserAttack = random.randint(1, UserAttack)
+    _UserDefense = random.randint(1, UserDefense)
+    _EnemyAttack = random.randint(1, EnemyAttack)
+    _EnemyDefense = random.randint(1, EnemyDefense)
+    if turn == 1:
+        while loopx == 0:
+            move = int(input('[1] Attack\n[2] Defend\n> '))
+            if move == 1:
+                print(f'{UserClass} try to attack {EnemyClass}')
+                sleep(1)
+                if _UserAttack > _EnemyDefense:
+                    _EnemyHP = _EnemyHP - _UserAttack
+                    if _EnemyHP <=0:
+                        print('You won')
+                        quit()
+                    else:
+                        print(f'{EnemyClass} suffer {_UserAttack} damage!\n{EnemyClass} HP {_EnemyHP}')
+                        loopx = 1
+                elif _UserAttack < _EnemyDefense:
+                    print(f'{UserClass} miss the attack!')
+                    loopx = 1
+                else:
+                    print(f'Nothing happened')
+                    loopx = 1
+            elif move == 2:
+                print(f'{UserClass} try to defend')
+                sleep(1)
+                if _UserDefense < _EnemyAttack:
+                    _UserHP = _UserHP - _EnemyAttack
+                    if _UserHP <= 0:
+                        print('You lost')
+                        quit()
+                    else:
+                        print(f'{UserClass} failed to stop {EnemyClass} attack!\nSuffer {_EnemyAttack} damage\nHP {_UserHP}')
+                        loopx = 1
+                elif _UserDefense > _EnemyAttack:
+                    print(f'{UserClass} blocks {EnemyClass} attack')
+                else:
+                    print('Nothing happened')
+                    loopx = 1
+        turn = 2
+    if turn == 2:
+        while loopx == 1:
+            AImove = random.randint(1,2)
+            if AImove == 1:
+                print(f'{EnemyClass} attack!')
+                if _EnemyAttack > _UserDefense:
+                    _UserHP = _UserHP - _EnemyAttack
+                    if _UserHP <= 0:
+                        print('You lost')
+                        quit()
+                    else:
+                        print(f'{EnemyClass} hit {UserClass}\nDamage: {_EnemyAttack}\nHP: {_UserHP}')
+                        loopx = 0
+                elif _EnemyAttack < _UserDefense:
+                    print(f'{EnemyClass} miss the attack')
+                    loopx = 0
+                else:
+                    print('Nothing happened')
+                    loopx = 0
+            elif AImove == 2:
+                print(f'{EnemyClass} try to defend')
+                sleep(1)
+                if _EnemyDefense > _UserAttack:
+                    print(f'{EnemyClass} blocks the attack')
+                    loopx = 0
+                elif _EnemyDefense < _UserAttack:
+                    if _EnemyHP <= 0:
+                        print('You won')
+                        quit()
+                    else:
+                        _EnemyHP = _EnemyHP - _UserAttack
+                        print(f'{EnemyClass} failed to stop {UserClass} attack!\nSuffer {_EnemyAttack} damage\nHP {_EnemyHP}')
+                        loopx = 0
+                else:
+                    print('Nothing happened')
+                    loopx = 0
+            turn = 1
+            continue
