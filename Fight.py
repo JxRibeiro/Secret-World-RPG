@@ -2,7 +2,6 @@ import random
 import time
 import sys
 from openpyxl import load_workbook
-import random
 from time import sleep
 from utils import _cls
 EnemyChosen = random.randint(1, 3)
