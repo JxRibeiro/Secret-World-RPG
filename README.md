@@ -6,7 +6,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub top language](https://img.shields.io/github/languages/top/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub last commit](https://img.shields.io/github/last-commit/JxRibeiro/Secret-World-RPG?color=red&style=flat)  
-<a href=https://replit.com/@JooRibeiro2/Secret-World-RPG>![Foo](https://img.shields.io/badge/Replit-Run%20on%20Replit-blue?style=flat&logo=repl.it)</a>
+<a href=https://replit.com/@JooRibeiro2/Secret-World-RPG-1#Main.py>![Foo](https://img.shields.io/badge/Replit-Run%20on%20Replit-blue?style=flat&logo=repl.it)</a>
 
 ## Entertainment Idea 💡
 To have a fun story telling text based RPG game
