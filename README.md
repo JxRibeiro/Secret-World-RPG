@@ -2,6 +2,7 @@
 
 ## Repository :octocat:
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0d29f083b05a4ed7ac08c6cfb6a16e23)](https://www.codacy.com/gh/JxRibeiro/Secret-World-RPG/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JxRibeiro/Secret-World-RPG&amp;utm_campaign=Badge_Grade)  
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6Ikp4UmliZWlybyIsInJlcG8xIjoiU2VjcmV0LVdvcmxkLVJQRyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjI5NjkwLCJpYXQiOjE2MjA0NjE2NDd9.EUyJEVWPR9PBq-9yrGwDefhEIHrqreiK7F3lnOPL7eQ)](https://www.deepcode.ai/app/gh/JxRibeiro/Secret-World-RPG/_/dashboard?utm_content=gh%2FJxRibeiro%2FSecret-World-RPG)    
 ![GitHub repo size](https://img.shields.io/github/repo-size/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub language count](https://img.shields.io/github/languages/count/JxRibeiro/Secret-World-RPG?style=flat)  
 ![GitHub top language](https://img.shields.io/github/languages/top/JxRibeiro/Secret-World-RPG?style=flat)  
